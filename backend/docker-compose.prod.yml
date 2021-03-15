@@ -11,8 +11,7 @@ services:
     build: 
       dockerfile: Dockerfile.prod
       context: .
-    command: gunicorn proxysite.wsgi --bind 0.0.0.0:8000
-    # command: /bin/bash
+    command: bash -c "echo 'start cron'; cron ; gunicorn proxysite.wsgi --bind 0.0.0.0:8000"
     volumes:
       - static_volume:/usr/src/backend/staticfiles/
     ports: 
