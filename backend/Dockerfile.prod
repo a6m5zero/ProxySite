@@ -21,7 +21,7 @@ ADD ./proxysite/proxyscraper/crontab /etc/cron.d/proxycrone
 RUN chmod 0644 /etc/cron.d/proxycrone
 RUN crontab /etc/cron.d/proxycrone
 RUN chmod a+x /usr/src/backend/proxyscraper/parse.sh
-CMD cron
+
 
 # Открываем порт в контейнере для взаимодействия
 EXPOSE 8000
