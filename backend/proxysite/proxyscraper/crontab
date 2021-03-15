@@ -1,0 +1,1 @@
+*/5 * * * * /usr/local/bin/python /usr/src/backend/proxyscraper/proxyScraper_S.py >/usr/src/backend/proxyscraper/test.log 2>&1

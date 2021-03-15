@@ -1,0 +1,24 @@
+node_modules/
+/dist
+/public
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor settings
+.vscode
+
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+
+# Python # 
+*.py[cod] 
+*$py.class 
