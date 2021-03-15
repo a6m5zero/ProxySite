@@ -21,7 +21,9 @@
 3. Go to proxysite/backend/
 4. Run docker-compose.prod.yml file 
 `sudo docker-compose -f docker-compose.prod.yml up --build`
+
 `sudo docker-compose -f docker-compose.prod.yml exec backend python manage.py migrate`
+
 `sudo docker-compose -f docker-compose.prod.yml exec backend python manage.py collectstatic`
 5. Go to localhost:80
 
