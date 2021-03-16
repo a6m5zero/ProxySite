@@ -25,12 +25,15 @@
 `sudo docker-compose -f docker-compose.prod.yml exec backend python manage.py migrate`
 
 `sudo docker-compose -f docker-compose.prod.yml exec backend python manage.py collectstatic`
+
 5. Go to localhost:80
 
 ### SETTINGS
 Proxy update time
 *EDIT FILE /backend/proxyscraper/crontab
-*Default every 5 minutes:
+
+Default every 5 minutes:
 `*/5 * * * *`
+
 Every 30 minutes, etc:
 `*/30 * * * *`

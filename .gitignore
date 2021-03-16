@@ -22,3 +22,4 @@ media
 # Python # 
 *.py[cod] 
 *$py.class 
+env/
